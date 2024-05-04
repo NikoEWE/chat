@@ -1,0 +1,32 @@
+.mainBox {
+    position: absolute;
+    background-color: #B51B75;
+    height: 30vw;
+    width: 18vw;
+    text-align: center;
+    top: 30px;
+    left: 50px;
+
+}
+
+.incomeBox {
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+.inputChat {
+    height: 10%;
+    width: 85%;
+    background-color: #721049;
+}
+
+.inputChat:focus{
+    outline: none;
+}
+
+.sendButtonChat {
+    width: 15%;
+    height: 10%;
+    background-color: #721049;
+}
