@@ -1,24 +1,39 @@
 .mainBox {
-    position: absolute;
+    position: fixed;
     background-color: #B51B75;
     height: 30vw;
     width: 18vw;
     text-align: center;
     top: 30px;
     left: 50px;
+    outline: 20px;
 
+}
+
+.topBar{
+    background-color: #640D6B;
+    width: 100%;
+    height: 7%;
 }
 
 .incomeBox {
     width: 100%;
-    height: 90%;
+    height: 83%;
     display: block;
+    font-size: 200px;
+    overflow:hidden;
 }
 
 .inputChat {
     height: 10%;
     width: 85%;
     background-color: #721049;
+    color: white;
+    
+}
+
+.inputChat::placeholder{
+    color: white;
 }
 
 .inputChat:focus{

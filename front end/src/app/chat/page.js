@@ -8,15 +8,20 @@ export default function Chat(){
     const [messages, setMessages] = useState([{}])
 
     const [cookies, setCookies, removeCookies] = useCookies(['auth'])
+    const client = createAxiosInstance({
+        baseURL: 'https://v2.jokeapi.dev/joke'
+      });
     useEffect(()=>{
-        console.log(cookies['auth'])
+        setMessages(client)
+        
     },[])
 
     const writeMessage = (e) => {
-        console.log(e.target.value) 
+        console.log(messages)
     }
     return(
         <body>
+            {message && <p>{message}</p>}
             <Chatbox onChange={writeMessage}></Chatbox>
             
         </body>
